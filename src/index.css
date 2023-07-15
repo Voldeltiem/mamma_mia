@@ -1,13 +1,90 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(pizza.png);
+  background-size: 15%;
+  background-repeat: repeat;
+  background-color: rgba(207, 204, 7, 0.651);
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.active {
+  color: white;
+  background-color: #146ebe;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 0.1em 0.2em;
+  margin: 0 1em 0 1em;
+}
+.inactive {
+  color: black;
+  background-color: transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 0.1em 0.2em;
+  margin: 0 1em 0 1em;
+}
+ul {
+  list-style-type: none;
+}
+.cardBig {
+  margin: 1em;
+  width: 50%;
+  height: vmax;
+}
+.conteinerCardBig {
+  display: flex;
+  justify-content: center;
+}
+.imgCardBig {
+  object-fit: cover;
+  height: 50%;
+}
+.priceBotom {
+  display: flex;
+  justify-content: space-between;
+}
+.containerHome {
+  padding: 2em;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 50px;
+}
+.cardPizza {
+  margin: 0.5em 0 0.5em 0;
+}
+.conteiner-carrito {
+  margin: 2em;
+  padding: 1em;
+}
+.conteiner-line-cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  text-align: center;
+}
+.img-conteiner-line-cart {
+    display: flex;
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  align-items: center;
+}
+.price-botom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.btnX{
+    margin-left: 0.9em;
 }
